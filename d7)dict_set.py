@@ -1,4 +1,27 @@
-# Initialize dictionary
+# Dictionary example
+fruits = {"a": "apple", "b": "banana", "c": "cherry", "d": "date"}
+
+# Basic access
+print(fruits["a"])  # Outputs: apple
+print(fruits["b"])  # Outputs: banana
+
+# Accessing keys and values
+for key, value in fruits.items():
+    print(f"Key {key} has value {value}")
+
+# Checking if key exists
+print("a" in fruits)  # Outputs: True
+print("z" not in fruits)  # Outputs: True
+
+# Adding a new key-value pair
+fruits["e"] = "elderberry"
+print(fruits)
+
+# Removing a key-value pair
+del fruits["b"]
+print(fruits)
+
+# Initialize another dictionary
 thisdict = {
     "brand": "Ford",
     "model": "Mustang",
@@ -96,3 +119,72 @@ print("Dictionary after setdefault 'brand':", thisdict3, "\n")
 # update()
 thisdict.update({"year": 2025})
 print("Dictionary after update 'year':", thisdict, "\n")
+
+# Initialize set
+thisset = {"apple", "banana", "cherry"}
+print("Original set:\n", thisset, "\n")
+
+# Membership testing
+print("apple" in thisset)  # Outputs: True
+print("fig" not in thisset)  # Outputs: True
+
+# Add Items
+thisset.add("orange")  # Adding a single element
+print("Set after adding 'orange':\n", thisset, "\n")
+
+thisset.update(["mango", "grapes"])  # Adding multiple elements
+print("Set after adding 'mango' & 'grapes':\n", thisset, "\n")
+
+# Remove Items
+thisset.remove("banana")  # Remove element; raises KeyError if not found
+print("Set after removing 'banana':\n", thisset, "\n")
+
+thisset.discard("cherry")  # Remove element if found; does nothing if not found
+print("Set after discarding 'cherry':\n", thisset, "\n")
+
+# thisset.remove("pear")  # Would raise KeyError because 'pear' is not found
+thisset.discard("pear")  # Does nothing, no error raised
+print("Set after discarding 'pear' (non-existent element):\n", thisset, "\n")
+
+# thisset.pop()  # Removes a random element; raises KeyError if set is empty
+print("Element popped from set:", thisset.pop())
+print("Set after pop:\n", thisset, "\n")
+
+# Loop Through a Set
+print("Looping through set:")
+for item in thisset:
+    print(item)
+print()
+
+# Copy Set
+thisset_copy = thisset.copy()  # Copy using copy method
+print("Copied set:", thisset_copy, "\n")
+
+# Set Operations
+set1 = {"apple", "banana", "cherry"}
+set2 = {"cherry", "orange", "grapes"}
+
+# Union
+union_set = set1.union(set2)
+print("Union of set1 and set2:", union_set, "\n")
+
+# Intersection
+intersection_set = set1.intersection(set2)
+print("Intersection of set1 and set2:", intersection_set, "\n")
+
+# Difference
+difference_set = set1.difference(set2)
+print("Difference of set1 and set2:", difference_set, "\n")
+
+# Symmetric Difference
+sym_diff_set = set1.symmetric_difference(set2)
+print("Symmetric difference of set1 and set2:", sym_diff_set, "\n")
+
+# Set Methods
+print("Set methods:")
+
+# clear()
+sample_set = {"a", "b", "c"}
+sample_set.clear()
+print("Set after clear():", sample_set, "\n")
+

@@ -1,3 +1,26 @@
+# List example
+fruits = ['apple', 'banana', 'cherry', 'date']
+
+# Basic access
+print(fruits[0])  # Outputs: apple
+print(fruits[1])  # Outputs: banana
+
+# Negative indices
+print(fruits[-1])  # Outputs: date
+print(fruits[-2])  # Outputs: cherry
+
+# Slicing
+print(fruits[1:3])  # Outputs: ['banana', 'cherry']
+print(fruits[:2])  # Outputs: ['apple', 'banana']
+print(fruits[2:])  # Outputs: ['cherry', 'date']
+
+# Stepping
+print(fruits[0:4:2])  # Outputs: ['apple', 'cherry']
+
+# Using enumerate()
+for index, value in enumerate(fruits):
+    print(f'Index {index} contains {value}')
+
 # List Examples
 print("List Examples :")
 # my_list = ["1, 2, 3, 4, 5"]
@@ -45,6 +68,30 @@ print("\n")
 # Tuple Examples
 print("Tuple Examples :")
 my_tuple = (1, 2, 3, 2, 4, 2, -5)
+
+# Tuple example
+fruits = ('apple', 'banana', 'cherry', 'date')
+
+# Basic access
+print(fruits[0])  # Outputs: apple
+print(fruits[1])  # Outputs: banana
+
+# Negative indices
+print(fruits[-1])  # Outputs: date
+print(fruits[-2])  # Outputs: cherry
+
+# Slicing
+print(fruits[1:3])  # Outputs: ('banana', 'cherry')
+print(fruits[:2])  # Outputs: ('apple', 'banana')
+print(fruits[2:])  # Outputs: ('cherry', 'date')
+
+# Stepping
+print(fruits[0:4:2])  # Outputs: ('apple', 'cherry')
+
+# Using enumerate()
+for index, value in enumerate(fruits):
+    print(f'Index {index} contains {value}')
+
 
 count_of_2 = my_tuple.count(2)
 print("Count of 2 in tuple:", count_of_2)

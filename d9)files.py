@@ -1,3 +1,29 @@
+# open(filepath.filextension,mode) - method to open file
+# new file is created if file does't exist
+# use single forward slash(/) or double backward slash(\\) for filepath
+# x - execute mode, r - read mode, w - write mode, a - append mode
+
+# f = open("C:\\Users\\31IN\\Desktop\\santhosh.txt","x")
+# f = open("C:\\Users\\31IN\\Desktop\\santhosh.txt","r")
+
+# f = open("C:\\Users\\31IN\\Desktop\\santhosh.txt","w")
+# f.write("This is a new line")
+# f = open("C:\\Users\\31IN\\Desktop\\santhosh.txt","a")
+# f.write("This is a new line")
+# f = open("C:\\Users\\31IN\\Desktop\\santhosh.txt","r")
+# print(f.read())
+f = open("C:\\Users\\31IN\\Desktop\\santhosh.txt","r+t")
+print(f.read())
+# binary mode is only sometimes used for img(change file for any img)
+f = open("C:\\Users\\31IN\\Desktop\\santhosh.txt","r+b")
+print(f.read())
+
+# import os
+# os.remove("filepath")
+
+
+
+
 import os
 import csv
 
